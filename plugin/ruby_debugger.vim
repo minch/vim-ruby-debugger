@@ -3,7 +3,7 @@ if exists("g:ruby_debugger_loaded")
 endif
 
 noremap <leader>B  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.toggle_breakpoint()<CR>
-noremap <leader>B  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.open_variables()<CR>
+noremap <leader>V  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.open_variables()<CR>
 noremap <leader>M  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.open_breakpoints()<CR>
 noremap <leader>T  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.open_frames()<CR>
 noremap <leader>S  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.step()<CR>
