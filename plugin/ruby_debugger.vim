@@ -2,16 +2,16 @@ if exists("g:ruby_debugger_loaded")
   finish
 endif
 
-noremap <leader>b  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.toggle_breakpoint()<CR>
-noremap <leader>v  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.open_variables()<CR>
-noremap <leader>m  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.open_breakpoints()<CR>
-noremap <leader>t  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.open_frames()<CR>
-noremap <leader>s  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.step()<CR>
-noremap <leader>f  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.finish()<CR>
-noremap <leader>n  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.next()<CR>
-noremap <leader>c  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.continue()<CR>
-noremap <leader>e  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.exit()<CR>
-noremap <leader>d  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.remove_breakpoints()<CR>
+noremap <leader>B  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.toggle_breakpoint()<CR>
+noremap <leader>B  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.open_variables()<CR>
+noremap <leader>M  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.open_breakpoints()<CR>
+noremap <leader>T  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.open_frames()<CR>
+noremap <leader>S  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.step()<CR>
+noremap <leader>F  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.finish()<CR>
+noremap <leader>N  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.next()<CR>
+noremap <leader>C  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.continue()<CR>
+noremap <leader>E  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.exit()<CR>
+noremap <leader>D  :call ruby_debugger#load_debugger() <bar> call g:RubyDebugger.remove_breakpoints()<CR>
 
 command! -nargs=* -complete=file Rdebugger call ruby_debugger#load_debugger() | call g:RubyDebugger.start(<q-args>) 
 command! -nargs=0 RdbStop call g:RubyDebugger.stop() 
